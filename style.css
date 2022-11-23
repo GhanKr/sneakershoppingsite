@@ -1,0 +1,342 @@
+:root {
+    --orange: hsl(26, 100%, 55%);
+    --paleOrange: hsl(25, 100%, 94%);
+    --darkBlue: hsl(220, 13%, 13%);
+    --darkGrayishBlue: hsl(219, 9%, 45%);
+    --grayishBlue: hsl(220, 14%, 75%);
+    --lightGrayishBlue: hsl(223, 64%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+.hidden{
+    display: none;
+}
+ul {
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+li {
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid var(--orange);
+}
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 11px;
+}
+img:hover{
+    cursor: pointer;
+}
+.orange{
+  color: var(--orange);
+}
+.black{
+    color: var(--black);
+}
+.white{
+    color: var(--white);
+}
+.grayish-blue{
+    color: var(--darkGrayishBlue);
+}
+.font-default{
+    font-size: 11px;
+}
+.font1{
+    font-size: 2.5rem;
+}
+.font2{
+    font-size: 1.5rem;
+}
+.font3{
+    font-size: 1rem;
+}
+.bold{
+    font-weight: 700;
+}
+.focus img{
+    opacity: 0.5;
+    border: 3px solid var(--orange);
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0 10% 0 10%;
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-family: Kumbh Sans;
+}
+svg:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+button:hover{
+    cursor: pointer;
+}
+.header {
+    border-bottom: 2px solid var(--lightGrayishBlue);
+
+    align-items: center;
+    gap: 2rem;
+}
+.cart{
+   margin-left: 35%;
+}
+.profile{
+ height: 7vh;
+ width: 6vw;
+}
+.profile img:hover{
+    border-radius: 50%;
+    border: 2px solid var(--orange);
+}
+.cart-profile-wrapper{
+    align-items: center;
+    margin-left: auto;
+}
+.main-body{
+    margin: 5rem 3rem 0 3rem;
+    height: 70vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    gap: 6rem;
+}
+.item-images{
+    flex-direction: column;
+}
+.item-main-image{
+   color: black;
+}
+.image-catalog{
+    height: 10vh;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+.item{
+    flex-direction: column;
+}
+.item-action > *{
+    border-radius: 11px;
+}
+/* this section is for styling contents when user want to see shoes images separately
+----------------------------------------------------------------------------------------*/
+.image-display-box{
+    position: fixed;
+    top: 8vh;
+    flex-direction: column;
+    justify-content: center;
+    left: 35vw;
+    align-items: center;
+}
+.cross-icon{
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+}
+.arrow{
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.left{
+    float: left;
+    left: -5%;
+}
+.right{
+    left: 95%;
+    float: right;
+}
+.item-wrapper{
+    align-items: center;
+}
+.item-price{
+    position: relative;
+}
+.discount{
+    background-color: var(--lightGrayishBlue);
+    border-radius: 0.5rem;
+    text-align: center;
+    
+}
+.previous-price{
+    top: 1.5rem;
+    position: absolute;
+    align-self: flex-end;
+    order: -1;
+    text-decoration: line-through;
+}
+.item-add-delete{
+    width: 30%;
+    height: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--lightGrayishBlue);
+}
+.cart-button{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    border: none;
+}
+/* this section is for styling cart container
+---------------------------------------------------------------------*/
+.cart-container{
+    position: relative;
+    width: 100%;
+}
+.total-items-display{
+    position: absolute;
+    bottom: 1rem;
+    height: 13px;
+    width: 16px;
+    left: 0.5rem;
+    text-align: center;
+    border-radius: 40%;
+    background: var(--orange);
+    font-size: 11px;
+    overflow-wrap: break-all;
+}
+.total-items-display p{
+    margin-top: auto;
+}
+.cart-box{
+    position: absolute;
+    background: var(--white);
+    width: 550%;
+    top: 2rem;
+    padding: 1rem;
+    left: -250%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.cart-box img{
+    height: 7vh;
+}
+.cart-heading{
+    border-bottom: 2px solid var(--lightGrayishBlue);
+}
+.item-present{
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.item-container{
+    align-items: center;
+    line-height: 8px;
+}
+.checkout-button{
+    height: 7vh;
+    width: 100%;
+    border-radius: 10px;
+}
+.menu-icon{
+    display: none;
+}
+@media (max-width:700px){
+    .font1{
+        font-size: 2rem;
+    }
+    .font2{
+        font-size: 1rem;
+    }
+   body{
+     margin: 0;
+     padding: 0 2rem 0rem 2rem;
+   }
+   .cart-box{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 90vw;
+    margin: 1rem;
+   }
+  .main-body{
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 4rem;
+    gap: 0;
+  }
+.profile{
+    height: 48px;
+    width: 64px;
+}
+  .menu-icon{
+    display: block;
+  }
+  .item-main-image{
+    margin: 0 -2rem 0 -2rem;
+  }
+  .item-main-image img{
+    border-radius: 0;
+  }
+  .image-catalog{
+    display: none;
+  }
+  .image-display-box{
+    position: relative;
+    top: 0;
+    margin: 0;
+    left: 0;
+    padding: 0;
+  }
+
+  .right{
+    left: 90%;
+  }
+  .cross-icon{
+    display: none;
+  }
+  .item-action{
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-add-delete{
+    width: 100%;
+  }
+  .cart-button{
+    width: 100%;
+    height: 3rem;
+  }
+   .menu{
+   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  width: 60vw;
+  font-weight: 800;
+  background-color: var(--white);
+   }
+   .current-price{
+    font-size: 2rem;
+   }
+   .previous-price{
+    top: 0;
+    margin-left: auto;
+    position: relative;
+    order: 2;
+   }
+}
