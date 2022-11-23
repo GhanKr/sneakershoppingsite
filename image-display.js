@@ -44,6 +44,7 @@ function changeImages(event, imageDisplayBox) {
     catalog.forEach(function (thumbnail) {
         if (thumbnail.contains(event.target)) {
             const getSrc = thumbnail.getAttribute('src');
+            console.log(getSrc);
             const stringSrc = getSrc.split('-thumbnail');
             const newImage = stringSrc[0] + stringSrc[1];
             mainImage.setAttribute('src', newImage);
@@ -56,6 +57,7 @@ function changeImagesOnArrowClick(event, imageDisplayBox) {
     const arrowRight = imageDisplayBox.querySelector('.arrow.right');
     const mainImage=imageDisplayBox.querySelector('.item-main-image img');
     const mainImageSrc = mainImage.getAttribute('src');
+    console.log(mainImageSrc);
     let index=images.indexOf(mainImageSrc);
     if (arrowLeft.contains(event.target)) {
         index--;
