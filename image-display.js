@@ -5,7 +5,7 @@ const itemPriceContainer=document.querySelector('.item-price');
 const images = [
     ".//image-product-1.jpg",
     ".//image-product-2.jpg",
-    ".//image-product-3.jpg",
+    "https://ghankr.github.io/sneakershoppingsite/images/image-product-3.jpg",
     ".//image-product-4.jpg"];
 
 imgArray.forEach(function (img) {
