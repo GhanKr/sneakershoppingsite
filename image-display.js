@@ -3,10 +3,10 @@ const mainBody = document.querySelector('.main-body');
 const imgArray = document.querySelector('.item-images').querySelectorAll('img');
 const itemPriceContainer=document.querySelector('.item-price');
 const images = [
-    "master//images//image-product-1.jpg",
-    "master//images//image-product-2.jpg",
-    "master//images//image-product-3.jpg",
-    "master//images//image-product-4.jpg"];
+    "./master//images//image-product-1.jpg",
+    "./master//images//image-product-2.jpg",
+    "./master//images//image-product-3.jpg",
+    "./master//images//image-product-4.jpg"];
 
 imgArray.forEach(function (img) {
     img.addEventListener('click', (event) => {
@@ -46,6 +46,7 @@ function changeImages(event, imageDisplayBox) {
             const getSrc = thumbnail.getAttribute('src');
             const stringSrc = getSrc.split('-thumbnail');
             const newImage = stringSrc[0] + stringSrc[1];
+            console.log(newImage)
             mainImage.setAttribute('src', newImage);
         }
     })
@@ -57,6 +58,7 @@ function changeImagesOnArrowClick(event, imageDisplayBox) {
     const mainImage=imageDisplayBox.querySelector('.item-main-image img');
     const mainImageSrc = mainImage.getAttribute('src');
     let index=images.indexOf(mainImageSrc);
+    console.log(index);
     if (arrowLeft.contains(event.target)) {
         index--;
         if(index==-1)
