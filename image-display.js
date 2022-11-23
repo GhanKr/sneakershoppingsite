@@ -3,7 +3,7 @@ const mainBody = document.querySelector('.main-body');
 const imgArray = document.querySelector('.item-images').querySelectorAll('img');
 const itemPriceContainer=document.querySelector('.item-price');
 const images = [
-    ".//image-product-1.jpg",
+    "master//images//image-product-1.jpg",
     ".//image-product-2.jpg",
     "https://ghankr.github.io/sneakershoppingsite/images/image-product-3.jpg",
     ".//image-product-4.jpg"];
