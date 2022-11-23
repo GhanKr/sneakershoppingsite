@@ -314,6 +314,7 @@ button:hover{
   .cart-button{
     width: 100%;
     height: 3rem;
+    margin-bottom: 4rem;
   }
    .menu{
    display: none;
