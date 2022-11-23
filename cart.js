@@ -13,9 +13,7 @@ body.addEventListener('click', (e) => {
     if (cartIcon.contains(e.target)) {
         displayCart(cartBox);
     }
-    // if(isCartOpened){
     listenForCloseCart(e);
-    // }
     if (deleteFromCart.contains(e.target)) {
         itemCount = 0;
 

@@ -46,7 +46,6 @@ function changeImages(event, imageDisplayBox) {
             const getSrc = thumbnail.getAttribute('src');
             const stringSrc = getSrc.split('-thumbnail');
             const newImage = stringSrc[0] + stringSrc[1];
-            console.log(newImage)
             mainImage.setAttribute('src', newImage);
         }
     })
@@ -58,7 +57,6 @@ function changeImagesOnArrowClick(event, imageDisplayBox) {
     const mainImage=imageDisplayBox.querySelector('.item-main-image img');
     const mainImageSrc = mainImage.getAttribute('src');
     let index=images.indexOf(mainImageSrc);
-    console.log(index);
     if (arrowLeft.contains(event.target)) {
         index--;
         if(index==-1)
