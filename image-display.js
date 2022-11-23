@@ -21,6 +21,7 @@ imgArray.forEach(function (img) {
 body.addEventListener('click', (event) => {
     const imageDisplayBox = document.querySelector('.image-display-box');
     if (imageDisplayBox != null) {
+        if(!mqM.matches)
         itemPriceContainer.style.visibility="hidden";
         removeImageDisplayBox(event, imageDisplayBox);
         changeImages(event, imageDisplayBox);
