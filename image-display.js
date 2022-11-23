@@ -45,7 +45,7 @@ function changeImages(event, imageDisplayBox) {
         if (thumbnail.contains(event.target)) {
             const getSrc = thumbnail.getAttribute('src');
             const stringSrc = getSrc.split('-thumbnail');
-            const newImage = "./"+stringSrc[0] + stringSrc[1];
+            const newImage = stringSrc[0] + stringSrc[1];
             console.log(newImage)
             mainImage.setAttribute('src', newImage);
         }
