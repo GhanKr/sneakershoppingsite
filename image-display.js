@@ -3,8 +3,8 @@ const mainBody = document.querySelector('.main-body');
 const imgArray = document.querySelector('.item-images').querySelectorAll('img');
 const itemPriceContainer=document.querySelector('.item-price');
 const images = [
-    "./master//images//image-product-1.jpg",
-    "./master//images//image-product-2.jpg",
+    "./images/image-product-1.jpg",
+    "./images/image-product-2.jpg",
     "./master//images//image-product-3.jpg",
     "./master//images//image-product-4.jpg"];
 
