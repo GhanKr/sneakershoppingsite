@@ -5,8 +5,8 @@ const itemPriceContainer=document.querySelector('.item-price');
 const images = [
     "./images/image-product-1.jpg",
     "./images/image-product-2.jpg",
-    "./master//images//image-product-3.jpg",
-    "./master//images//image-product-4.jpg"];
+    "./images/image-product-3.jpg",
+    "./images/image-product-4.jpg"];
 
 imgArray.forEach(function (img) {
     img.addEventListener('click', (event) => {
@@ -45,7 +45,7 @@ function changeImages(event, imageDisplayBox) {
         if (thumbnail.contains(event.target)) {
             const getSrc = thumbnail.getAttribute('src');
             const stringSrc = getSrc.split('-thumbnail');
-            const newImage = stringSrc[0] + stringSrc[1];
+            const newImage = "./"+stringSrc[0] + stringSrc[1];
             console.log(newImage)
             mainImage.setAttribute('src', newImage);
         }
